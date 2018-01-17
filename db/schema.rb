@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180116033718) do
+ActiveRecord::Schema.define(version: 20180117044004) do
 
   create_table "active_admin_comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "namespace"
@@ -48,7 +48,28 @@ ActiveRecord::Schema.define(version: 20180116033718) do
     t.string "nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.time "hora_inicio"
+    t.date "fecha_inicio"
+    t.time "hora"
+    t.date "fecha"
+    t.string "lugar"
+    t.string "meta"
+    t.date "inicio_inscripcion"
+    t.date "fin_inscripcion"
+    t.integer "costo_inscripcion"
+    t.string "pagina_web"
+    t.string "logo"
+    t.integer "numero_inicial"
+    t.string "nombre_contacto"
+    t.string "telefono_contacto"
+    t.string "email_contacto"
     t.index ["user_id"], name: "index_events_on_user_id"
+  end
+
+  create_table "tipo_eventos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "nombre_evento"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

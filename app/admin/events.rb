@@ -11,6 +11,8 @@ ActiveAdmin.register Event do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :nombre, :user_id
+permit_params :nombre, :user_id, :hora, :fecha, :lugar, :meta, :inicio_inscripcion, 
+    :fin_inscripcion, :costo_inscripcion, :pagina_web, :logo, :numero_inicial, 
+    :nombre_contacto, :telefono_contacto, :email_contacto, :string
 
 end
