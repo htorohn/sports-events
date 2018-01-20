@@ -15,7 +15,7 @@ import {
 //import backgroundImage from '/images/runner-wallpapers.jpg';
 
 const FixedMenu = () => (
-  <Menu fixed='top' size='large'>
+  <Menu  stackable fixed='top' size='large'>
     <Container>
       <Menu.Item as='a' active>Home</Menu.Item>
       <Menu.Item as='a'>Work</Menu.Item>
@@ -60,7 +60,7 @@ export default class HomepageLayout extends Component {
           >
             {/* <Image src='/images/runner-wallpapers.jpg' fluid /> */}
             <Container>
-              <Menu inverted pointing secondary size='large' style={{ border: 0 }}>
+              <Menu stackable inverted pointing secondary size='large' style={{ border: 0 }}>
                 <Menu.Item as='a' active>Home</Menu.Item>
                 <Menu.Item as='a'>Work</Menu.Item>
                 <Menu.Item as='a'>Company</Menu.Item>
