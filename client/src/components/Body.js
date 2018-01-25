@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import FixedMenu from './FixedMenu';
 
-export default class Header extends Component {
+export default class Body extends Component {
     render() {
         //console.log(this.props.location.pathname);
 
         return(
             <div>
-                <FixedMenu />
+                <p> estoy en el Body </p>
             </div>
         )
     }

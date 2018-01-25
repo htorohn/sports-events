@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import { Switch, Route } from 'react-router-dom'
+import HomePageLayout from './components/HomePage'
 import Main from './components/Main';
 
 export default class App extends Component {
   render() {  
     return (
       <div>
-        <Header />
-        <Main />
-        {/* <Footer /> */}
+        <Switch>
+          <Route exact path='/' component={ HomePageLayout } />
+          <Route path='/' component={ Main } />
+        </Switch>
       </div>
     );
   }

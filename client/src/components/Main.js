@@ -1,6 +1,9 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import HomePageLayout from './HomePage'
+import Header from './Header';
+import EventsList from './EventsList';
+import Footer from './Footer';
+
 
 
 // The Main component renders one of the three provided
@@ -10,9 +13,11 @@ import HomePageLayout from './HomePage'
 // when the pathname is exactly the string "/"
 const Main = () => (
   <main>
+    <Header />
     <Switch>
-      <Route exact path='/' component={HomePageLayout}/>
+      <Route path='/events' component={ EventsList } />
     </Switch>
+    <Footer />
   </main>
 )
 
