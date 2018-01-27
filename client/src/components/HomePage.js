@@ -8,7 +8,6 @@ import {
   Header,
   Icon,
   Image,
-  List,
   Menu,
   Segment,
   Visibility,
@@ -25,7 +24,7 @@ export default class HomepageLayout extends Component {
 
   render() {
     const { visible } = this.state
-    console.log(this.props.location.pathname)
+    //console.log(this.props.location.pathname)
     return (
 
       <div>
@@ -53,7 +52,7 @@ export default class HomepageLayout extends Component {
 
             <Container>
               <Menu stackable inverted pointing secondary size='large' style={{ border: 0 }}>
-                <Menu.Item>
+                <Menu.Item active>
                   <NavLink to="/" exact activeClassName="active">Home</NavLink>
                 </Menu.Item>
                 <Menu.Item>

@@ -19,7 +19,7 @@ export default class FixedMenu extends Component {
           <Menu.Item>
             <NavLink to="/" exact activeClassName="active">Home</NavLink>
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item active>
             <NavLink to="/events" activeClassName="active">Events</NavLink>
           </Menu.Item>
           <Menu.Menu position='right'>

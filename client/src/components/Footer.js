@@ -9,11 +9,9 @@ import {
 
 export default class Footer extends Component {
     render() {
-        //console.log(this.props.location.pathname);
-
         return(
             <div>
-                <Segment inverted vertical style={{ padding: '5em 0em' }}>
+                <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
                     <Container>
                         <Grid divided inverted stackable>
                         <Grid.Row>

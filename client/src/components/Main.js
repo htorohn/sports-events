@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Header from './Header';
-import EventsList from './EventsList';
+import EventsCalendar from './EventsCalendar';
 import Footer from './Footer';
 
 
@@ -13,9 +13,9 @@ import Footer from './Footer';
 // when the pathname is exactly the string "/"
 const Main = () => (
   <main>
-    <Header />
+    <Header/>
     <Switch>
-      <Route path='/events' component={ EventsList } />
+      <Route path='/events' component={ EventsCalendar } />
     </Switch>
     <Footer />
   </main>
